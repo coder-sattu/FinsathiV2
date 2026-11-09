@@ -1,0 +1,15 @@
+================================================================================
+                    FINSAATHI V2 - COMMANDS TO RUN LOCALLY
+================================================================================
+
+1. BACKEND TERMINAL COMMAND (Run in PowerShell / CMD):
+   cd C:\Users\ws_htu2026\Desktop\FinsathiV2\backend
+   python -m uvicorn app.main:app --port 8080 --reload
+
+2. FRONTEND TERMINAL COMMAND (Run in separate PowerShell / CMD):
+   cd C:\Users\ws_htu2026\Desktop\FinsathiV2\frontend
+   npm run dev -- --port 5173
+
+3. TEST CREDENTIALS & SAMPLE DATA:
+   Refer to sample_patient_details.txt in the project root folder.
+================================================================================

@@ -1,0 +1,4 @@
+[
+  { "value": "PLANNED", "label": "Planned hospitalisation" },
+  { "value": "EMERGENCY", "label": "Emergency hospitalisation" }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "clause_id": "CLAUSE_ROOM_RENT",
+    "title": "Room Rent & ICU Charges Capping",
+    "category": "COVERAGE_LIMITS",
+    "products": ["Family Health Optima", "Individual Health Secure"],
+    "content": "Normal room rent is covered up to 1% of the Sum Insured per day. ICU charges are covered up to 2% of the Sum Insured per day. If a higher room category is selected, a proportionate deduction will be applied to room rent, nursing, and medical practitioner fees.",
+    "keywords": ["room rent", "icu", "capping", "proportionate deduction", "suite", "deluxe", "per day limit"]
+  },
+  {
+    "clause_id": "CLAUSE_ROOM_RENT_GRP",
+    "title": "Group Mediclaim Room Rent & ICU Rules",
+    "category": "COVERAGE_LIMITS",
+    "products": ["Group Mediclaim Plus"],
+    "content": "Single Private A/C room is covered up to ₹7,500 per day. ICU charges have no capping and are covered at actuals up to the total Sum Insured.",
+    "keywords": ["corporate", "group mediclaim", "single private room", "icu actuals"]
+  },
+  {
+    "clause_id": "CLAUSE_PRE_POST",
+    "title": "Pre and Post Hospitalization Coverage",
+    "category": "BENEFITS",
+    "products": ["ALL"],
+    "content": "Pre-hospitalization medical expenses are covered for 60 days prior to the date of admission. Post-hospitalization medical expenses are covered for 90 days following the date of discharge. Original diagnostic reports and prescription bills must be submitted.",
+    "keywords": ["pre hospitalization", "post hospitalization", "60 days", "90 days", "diagnostic reports", "prescriptions"]
+  },
+  {
+    "clause_id": "CLAUSE_CATARACT",
+    "title": "Cataract Surgery Sub-limit",
+    "category": "SUB_LIMITS",
+    "products": ["Family Health Optima", "Individual Health Secure", "Senior Care Shield"],
+    "content": "Cataract surgery expense is capped at ₹40,000 per eye or 10% of the Sum Insured, whichever is lower. A specific waiting period of 24 months applies unless covered under corporate group policy.",
+    "keywords": ["cataract", "eye surgery", "lens", "sublimit", "40000", "waiting period"]
+  },
+  {
+    "clause_id": "CLAUSE_WAITING_PERIOD",
+    "title": "Initial & Pre-Existing Disease (PED) Waiting Periods",
+    "category": "EXCLUSIONS_WAITING",
+    "products": ["ALL"],
+    "content": "A 30-day initial waiting period applies for all illnesses except accidental injuries. Specific surgeries (Cataract, Joint Replacement, Hernia) have a 24-month waiting period. Pre-existing diseases (PED) have a 36-month waiting period from policy inception.",
+    "keywords": ["waiting period", "30 days", "24 months", "36 months", "ped", "pre existing disease", "initial waiting"]
+  },
+  {
+    "clause_id": "CLAUSE_INTIMATION_TIMELINE",
+    "title": "Claim Intimation & Reimbursement Document Submission Timelines",
+    "category": "TIMELINES",
+    "products": ["ALL"],
+    "content": "For emergency hospitalization, intimation must be given within 24 hours of admission. For planned hospitalization, intimation must be submitted at least 48 hours in advance. For reimbursement claims, all original hospital bills, discharge summary, and payment receipts must be submitted within 15 days from discharge date.",
+    "keywords": ["timeline", "24 hours", "48 hours", "15 days", "intimation deadline", "bill submission"]
+  },
+  {
+    "clause_id": "CLAUSE_DAY_CARE",
+    "title": "Day Care Procedures Coverage",
+    "category": "BENEFITS",
+    "products": ["ALL"],
+    "content": "Over 540 day-care procedures (treatments requiring less than 24 hours of hospitalization due to advanced medical technology, such as Dialysis, Chemotherapy, Radiotherapy, Cataract) are fully covered up to the Sum Insured.",
+    "keywords": ["day care", "24 hours", "dialysis", "chemotherapy", "cataract", "radiotherapy"]
+  },
+  {
+    "clause_id": "CLAUSE_SENIOR_COPAY",
+    "title": "Senior Care Shield Co-Payment",
+    "category": "CO_PAYMENT",
+    "products": ["Senior Care Shield"],
+    "content": "Senior Care Shield policies carry a mandatory 20% co-payment on all admissible claim amounts. The remaining 80% is payable by the insurer.",
+    "keywords": ["co payment", "copay", "senior care", "20%", "senior citizen"]
+  }
+]

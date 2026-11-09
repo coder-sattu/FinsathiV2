@@ -1,0 +1,18 @@
+{
+  "dev_otp": "123456",
+  "max_attempts": 3,
+  "session_ttl_minutes": 30,
+  "upload": {
+    "max_mb": 5,
+    "allowed_types": ["application/pdf", "image/jpeg", "image/png"]
+  },
+  "doa_rules": {
+    "max_past_days": 30,
+    "max_future_days_planned": 30
+  },
+  "links": {
+    "website_url": "https://example.com/claims",
+    "self_i_url": "https://example.com/self-i"
+  },
+  "agent_handoff_message": "Our claims executive will call you on your registered mobile number within 2 working hours."
+}

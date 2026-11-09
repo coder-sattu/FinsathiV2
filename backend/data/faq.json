@@ -1,0 +1,52 @@
+[
+  {
+    "id": "FAQ-01",
+    "question": "What is cashless claim?",
+    "answer": "The insurer settles the bill directly with a network hospital. You pay only non-covered items."
+  },
+  {
+    "id": "FAQ-02",
+    "question": "What is reimbursement claim?",
+    "answer": "You pay the hospital first and submit bills and documents to get the amount reimbursed."
+  },
+  {
+    "id": "FAQ-03",
+    "question": "What is a network hospital?",
+    "answer": "A hospital that has a tie-up with the insurer for cashless treatment."
+  },
+  {
+    "id": "FAQ-04",
+    "question": "How long does claim processing take?",
+    "answer": "Following receipt of the necessary paperwork, the claim process will be finished in 15 days."
+  },
+  {
+    "id": "FAQ-05",
+    "question": "What documents are needed for reimbursement?",
+    "answer": "Signed claim form, discharge summary, final bill, payment receipts, cancelled cheque/NEFT details and photo ID. Reports and pharmacy bills are optional."
+  },
+  {
+    "id": "FAQ-06",
+    "question": "What is UHID?",
+    "answer": "Unique Health ID printed on your health card / e-card for each insured member."
+  },
+  {
+    "id": "FAQ-07",
+    "question": "What is an SR number?",
+    "answer": "A service request number used to upload pending documents for your claim."
+  },
+  {
+    "id": "FAQ-08",
+    "question": "Can I upload documents later?",
+    "answer": "Yes. Use the SR number shared after intimation to upload them later."
+  },
+  {
+    "id": "FAQ-09",
+    "question": "What is intimation?",
+    "answer": "Informing the insurer about a hospitalisation so a claim can be registered."
+  },
+  {
+    "id": "FAQ-10",
+    "question": "Is there a deadline to intimate?",
+    "answer": "Intimate as soon as possible; for planned admissions before admission, for emergencies within 24 hours of admission."
+  }
+]

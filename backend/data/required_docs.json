@@ -1,0 +1,16 @@
+{
+  "CASHLESS": [
+    { "code": "ID_PROOF", "name": "Patient photo ID proof", "mandatory": true },
+    { "code": "POLICY_CARD", "name": "Health card / e-card", "mandatory": true }
+  ],
+  "REIMBURSEMENT": [
+    { "code": "CLAIM_FORM", "name": "Signed claim form", "mandatory": true },
+    { "code": "DISCHARGE", "name": "Discharge summary", "mandatory": true },
+    { "code": "FINAL_BILL", "name": "Final hospital bill with breakup", "mandatory": true },
+    { "code": "RECEIPTS", "name": "Payment receipts", "mandatory": true },
+    { "code": "BANK", "name": "Cancelled cheque / NEFT details", "mandatory": true },
+    { "code": "ID_PROOF", "name": "Patient photo ID proof", "mandatory": true },
+    { "code": "REPORTS", "name": "Investigation reports", "mandatory": false },
+    { "code": "PHARMACY", "name": "Pharmacy bills and prescriptions", "mandatory": false }
+  ]
+}

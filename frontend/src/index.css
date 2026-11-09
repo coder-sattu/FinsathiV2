@@ -1,0 +1,43 @@
+:root {
+  --text: #1E293B;
+  --text-h: #0F172A;
+  --bg: #F4F6F9;
+  --border: #E2E8F0;
+  --code-bg: #F1F5F9;
+  --accent: #0052CC;
+  --accent-bg: rgba(0, 82, 204, 0.1);
+  --accent-border: rgba(0, 82, 204, 0.3);
+
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font: 16px/145% var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  overflow-x: hidden;
+  background-color: #F4F6F9;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+

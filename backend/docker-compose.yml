@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: claimbot_postgres
+    environment:
+      POSTGRES_USER: claimbot
+      POSTGRES_PASSWORD: claimbot
+      POSTGRES_DB: claimbot
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./migrations/001_init.sql:/docker-entrypoint-initdb.d/001_init.sql
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

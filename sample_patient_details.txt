@@ -1,0 +1,133 @@
+================================================================================
+          FINSAATHI (CLAIM ASSIST) - SAMPLE PATIENT & TEST CREDENTIALS
+================================================================================
+
+DEV DEFAULT OTP: 123456 (For all mobile number authentications)
+
+--------------------------------------------------------------------------------
+1. CASHLESS CLAIM TEST PROFILES
+--------------------------------------------------------------------------------
+
+[PROFILE A: RETAIL POLICY - ROHAN KULKARNI]
+• Registered Mobile Number (RMN): 9000000001
+• Policy Number: HP-RET-2026-0001
+• Policy Product: Family Health Optima (Sum Insured: ₹5,000,000)
+• Patient 1 (SELF): Rohan Kulkarni (UHID: UH1000000001 | DOB: 1985-05-15)
+• Patient 2 (SPOUSE): Sneha Kulkarni (UHID: UH1000000002 | DOB: 1988-08-20)
+• Patient 3 (SON): Aarav Kulkarni (UHID: UH1000000003 | DOB: 2015-03-10)
+• Intimator Email: rohan.kulkarni@example.com
+• Sample Date of Admission (DOA): 2026-10-03 (Matching sample documents)
+• Hospital Pincode: 411045 (Baner, Pune)
+• Network Hospitals Available:
+  - Jupiter Hospital (ID: PUN-005 | Network: Yes | Approx: ₹1,50,000)
+  - Manipal Hospital (ID: PUN-006 | Network: Yes | Approx: ₹1,50,000)
+• Sample Diagnosis: D103 - Dengue fever / D101 - Acute appendicitis
+
+[PROFILE B: CORPORATE GROUP POLICY - PRIYA DESHMUKH]
+• Registered Mobile Number (RMN): 9000000002
+• Policy Number: HP-GRP-2026-0001
+• Policy Product: Group Mediclaim Plus (Corporate: Acme Infotech Pvt Ltd)
+• Employee Code: EMP10001
+• Patient 1 (SELF): Priya Deshmukh (UHID: UH1000000004 | DOB: 1990-11-12)
+• Patient 2 (SPOUSE): Vikram Deshmukh (UHID: UH1000000005 | DOB: 1987-04-05)
+• Intimator Email: priya.deshmukh@example.com
+• Sample Date of Admission (DOA): 2026-10-03 (Matching sample documents)
+• Hospital Pincode: 400050 (Bandra West, Mumbai)
+• Network Hospitals Available:
+  - Lilavati Hospital (ID: MUM-002 | Network: Yes | Approx: ₹1,50,000)
+  - Holy Family Hospital (ID: MUM-003 | Network: Yes | Approx: ₹90,000)
+
+[PROFILE C: RETAIL POLICY - NEHA SHAH]
+• Registered Mobile Number (RMN): 9000000011
+• Policy Number: HP-RET-2026-0011
+• Policy Product: Family Health Optima (Sum Insured: ₹7,00,000)
+• Patient 1 (SELF): Neha Shah (UHID: UH1000000020 | DOB: 1991-06-18)
+• Patient 2 (SPOUSE): Kunal Shah (UHID: UH1000000021 | DOB: 1988-03-22)
+• Intimator Email: iamsatvashil@gmail.com
+• Sample Date of Admission (DOA): 2026-10-03 (Matching sample documents)
+• Hospital Pincode: 400050 (Bandra West, Mumbai)
+• Network Hospitals Available:
+  - Lilavati Hospital (ID: MUM-002 | Network: Yes | Approx: ₹1,80,000)
+  - Holy Family Hospital (ID: MUM-003 | Network: Yes | Approx: ₹1,10,000)
+• Sample Diagnosis: D101 - Acute appendicitis / D103 - Dengue fever
+
+--------------------------------------------------------------------------------
+2. REIMBURSEMENT & DOCUMENT AI UPLOAD TEST PROFILE
+--------------------------------------------------------------------------------
+
+[PROFILE C: REIMBURSEMENT + GEMINI DOC AI MISMATCH TEST - NEHA SHAH]
+• Registered Mobile Number (RMN): 9000000011
+• Policy Number: HP-RET-2026-0011
+• Policy Product: Family Health Optima (Sum Insured: ₹7,00,000)
+• Patient 1 (SELF): Neha Shah (UHID: UH1000000020)
+• Patient 2 (SPOUSE): Kunal Shah (UHID: UH1000000021)
+• Intimator Email: iamsatvashil@gmail.com
+• Claim Type: Reimbursement
+• Hospital Pincode: 400050 (Mumbai) -> Select Lilavati Hospital (MUM-002)
+• Required Documents Checklist for Upload:
+  1. Signed Claim Form (CLAIM_FORM)
+  2. Discharge Summary (DISCHARGE)
+  3. Final Hospital Bill (FINAL_BILL)
+  4. Payment Receipts (RECEIPTS)
+  5. Bank Details / Cancelled Cheque (BANK)
+  6. Photo ID Proof (ID_PROOF)
+• Document AI Mismatch Trigger: If a uploaded Discharge Summary contains "Neha Shah" while claim is filed for "Kunal Shah", Gemini Doc AI flags a 1-Mismatch Warning Card with [Accept & Continue] or [Re-upload] buttons.
+
+--------------------------------------------------------------------------------
+3. NON-NETWORK HOSPITAL SWITCH SCENARIO
+--------------------------------------------------------------------------------
+• Hospital Pincode: 411033 (Chinchwad, Pune)
+• Non-Network Hospital: Lokmanya Hospital (ID: PUN-016 | Network: FALSE)
+• Behavior: If CASHLESS is selected, the chatbot warns that Lokmanya Hospital is Non-network and offers an instant button to switch to REIMBURSEMENT.
+
+--------------------------------------------------------------------------------
+4. AGENTIC SYSTEM & POLICY DOCUMENT RAG CHAT PROMPTS
+--------------------------------------------------------------------------------
+You can type natural language questions in chat at any step:
+
+• Policy RAG Queries:
+  - "What is the room rent limit for Family Health Optima policy?"
+  - "Is cataract surgery covered and what is the waiting period?"
+  - "What is the pre and post hospitalization coverage?"
+  - "How many days do I have to submit reimbursement bills?"
+  - "What is the co-payment percentage for Senior Care Shield?"
+
+• Live Agent Handoff:
+  - Type "agent" or "talk to a person" to trigger human-in-the-loop executive support.
+
+--------------------------------------------------------------------------------
+5. APPLICATION LOCAL URLS
+--------------------------------------------------------------------------------
+• Frontend Web App UI: http://localhost:5173
+• Backend FastAPI Service: http://localhost:8080
+• Swagger Interactive API Docs: http://localhost:8080/docs
+================================================================================
+
+
+
+
+The sample_patient_details.txt file already contains comprehensive sample patient details with:
+
+Existing Profiles:
+
+Profile A: Rohan Kulkarni (Retail Policy - Cashless)
+RMN: 9000000001
+Policy: HP-RET-2026-0001
+3 patients (Self, Spouse, Son)
+Network hospitals in Pune
+Profile B: Priya Deshmukh (Corporate Group Policy - Cashless)
+RMN: 9000000002
+Policy: HP-GRP-2026-0001
+2 patients (Self, Spouse)
+Network hospitals in Mumbai
+Profile C: Neha Shah (Reimbursement + Doc AI Test)
+RMN: 9000000011
+Policy: HP-RET-2026-0011
+Document upload checklist
+AI mismatch trigger scenarios
+Additional Test Scenarios:
+
+Non-network hospital switch scenario
+Policy RAG chat prompts
+Live agent handoff triggers
+Application URLs (Frontend: 5173, Backend: 8080)
